@@ -4,3 +4,126 @@
     --color3: #C7B7A3;
     --color4: #E8D8C4;
 }
+
+* {
+    margin: 0;
+    color: var(--color4);
+    font-family: sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--color3);
+}
+
+p {
+    color: var(--color4);
+    height: min-content;
+}
+
+div.nav {
+    display: flex;
+    background-color: var(--color1);
+    justify-content: center;
+    padding: 1cqh;
+}
+
+div.bookshelf {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.book {
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-flow: column;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: rgb(50, 50, 133);
+    height: 300px;
+    width: 200px;
+
+    border-radius: 10px;
+    border-left: solid 13px rgb(27, 27, 89);
+
+    justify-content: space-between;
+
+    box-shadow: 
+                8px 7px 0px -4px,
+                5px 5px 0px 3px rgb(27, 27, 89),
+                5px 5px 7px 5px rgb(74, 74, 74);
+}
+
+#add-book {
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+p.book-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+p.book-author, p.book-pages {
+    font-size: 16px;
+    margin: 10px;
+    align-self: start;
+
+}
+
+div.book:hover {
+    background-color: rgb(62, 62, 160);
+    border-left: solid 13px rgb(41, 41, 130);
+    box-shadow: 
+                8px 7px 0px -4px,
+                5px 5px 0px 3px rgb(41, 41, 130),
+                5px 5px 7px 7px rgb(74, 74, 74);
+}
+
+::backdrop {
+  opacity: 0.75;
+}
+
+dialog {
+    margin: auto auto;
+    border-radius: 10px;
+    color: var(--color1);
+    background-color: var(--color2);
+}
+
+dialog p {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+button {
+    background-color: var(--color1);
+    border-radius: 10px;
+    border: solid 1px var(--color2);
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 25px;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+}
+
+div.buttons {
+    margin: 20px 0px 0px 0px;
+    align-self: flex-end;
+}
+
+input {
+    background-color: var(--color4);
+    color: var(--color1);
+}
+

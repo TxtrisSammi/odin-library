@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="nav">
+        <h1>ODIN LIBRARY PROJECT</h1>
+    </div>
+
+            <dialog>
+            <p>Add New Book</p>
+            <form>
+                <div class="inputs">
+                    <label for="title">Title</label>
+                    <input id="title" type="text" required>
+                    <label for="author">Author</label>
+                    <input type="text" id="author" required>
+                    <label for="pages">Pages</label>
+                    <input type="number" id="pages" required>
+                </div>
+                <div class="buttons">
+                    <button type="button">Close</button>
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </dialog>
+
+    <div class="bookshelf">
+        <div class="book" id="add-book">
+            <svg id="plus-icon" width="175px" height="175px" viewBox="0 0 24.00 24.00" fill="none"
+                xmlns="http://www.w3.org/2000/svg" transform="rotate(0)">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                    stroke-width="0.43200000000000005"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path opacity="0.1"
+                        d="M3 12C3 4.5885 4.5885 3 12 3C19.4115 3 21 4.5885 21 12C21 19.4115 19.4115 21 12 21C4.5885 21 3 19.4115 3 12Z"
+                        fill="#323232"></path>
+                    <path d="M9 12H15" stroke="#323232" stroke-width="1.056" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    <path d="M12 9L12 15" stroke="#323232" stroke-width="1.056" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    <path
+                        d="M3 12C3 4.5885 4.5885 3 12 3C19.4115 3 21 4.5885 21 12C21 19.4115 19.4115 21 12 21C4.5885 21 3 19.4115 3 12Z"
+                        stroke="#323232" stroke-width="1.056"></path>
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
