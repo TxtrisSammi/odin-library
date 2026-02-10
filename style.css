@@ -1,3 +1,8 @@
+@font-face {
+    font-family: AlmaMono-Regular;
+    src: url(./fonts/AlmaMono-Regular.otf);
+}
+
 :root {
     --color1: #561C24;
     --color2: #6D2932;
@@ -8,7 +13,7 @@
 * {
     margin: 0;
     color: var(--color4);
-    font-family: sans-serif;
+    font-family: AlmaMono-Regular;
 }
 
 html, body {
@@ -28,7 +33,7 @@ div.nav {
     display: flex;
     background-color: var(--color1);
     justify-content: center;
-    padding: 1cqh;
+    padding: 3cqh;
 }
 
 div.bookshelf {
@@ -54,7 +59,7 @@ div.book {
 
     box-shadow: 
                 8px 7px 0px -4px,
-                5px 5px 0px 3px rgb(27, 27, 89),
+                5px 5px 0px 4px rgb(27, 27, 89),
                 5px 5px 7px 5px rgb(74, 74, 74);
 }
 
@@ -66,13 +71,13 @@ div.book {
 
 p.book-title {
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     margin: 10px;
 }
 
 p.book-author, p.book-pages {
-    font-size: 16px;
+    font-size: 14px;
     margin: 10px;
     align-self: start;
 
@@ -83,7 +88,7 @@ div.book:hover {
     border-left: solid 13px rgb(41, 41, 130);
     box-shadow: 
                 8px 7px 0px -4px,
-                5px 5px 0px 3px rgb(41, 41, 130),
+                5px 5px 0px 4px rgb(41, 41, 130),
                 5px 5px 7px 7px rgb(74, 74, 74);
 }
 
@@ -125,5 +130,44 @@ div.buttons {
 input {
     background-color: var(--color4);
     color: var(--color1);
+    margin: 5px;
+    width: max-content;
 }
 
+dialog p {
+    margin-bottom: 20px
+}
+
+div.input-style {
+    display: flex;
+    width: 280px;
+    justify-content: space-between;
+}
+
+div.book-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+div.book-buttons svg {
+    height: 50px;
+    width: 50px;
+    display: block; 
+    background-color: rgb(128, 0, 0);
+    border-radius: 10px;
+    padding: 5px; 
+    box-sizing: border-box; 
+}
+
+div.book-buttons svg:hover {
+    background-color: rgb(194, 0, 0);
+}
+
+div.book-buttons svg.unread-button {
+    background-color: rgb(0, 128, 0)
+}
+
+div.book-buttons svg.unread-button:hover {
+    background-color: rgb(0, 194, 0)
+}
